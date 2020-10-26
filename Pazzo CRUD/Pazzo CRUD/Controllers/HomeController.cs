@@ -15,14 +15,14 @@ namespace Pazzo_CRUD.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "應用程式";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "聯絡窗口";
 
             return View();
         }

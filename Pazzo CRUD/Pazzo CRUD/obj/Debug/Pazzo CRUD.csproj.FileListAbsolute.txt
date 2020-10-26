@@ -86,3 +86,4 @@ D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\bin\EntityFramework.dll
 D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\bin\EntityFramework.SqlServer.dll
 D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\bin\EntityFramework.xml
 D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\bin\EntityFramework.SqlServer.xml
+D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\obj\Debug\Pazzo CRUD.csprojAssemblyReference.cache
