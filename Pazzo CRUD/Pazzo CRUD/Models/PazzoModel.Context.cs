@@ -25,7 +25,7 @@ namespace Pazzo_CRUD.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Department> Department { get; set; }
         public virtual DbSet<Employee> Employee { get; set; }
+        public virtual DbSet<Department> Department { get; set; }
     }
 }
