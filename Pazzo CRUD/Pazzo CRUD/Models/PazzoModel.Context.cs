@@ -27,5 +27,6 @@ namespace Pazzo_CRUD.Models
     
         public virtual DbSet<Employee> Employee { get; set; }
         public virtual DbSet<Department> Department { get; set; }
+        public virtual DbSet<EmployeeDetail> EmployeeDetail { get; set; }
     }
 }

@@ -18,7 +18,7 @@ namespace Pazzo_CRUD.Controllers
         public ActionResult Index()
         {
 
-            return View(db.Employee.ToList());
+            return View(db.EmployeeDetail.ToList());
         }
 
         // GET: Employees/Details/5
@@ -28,7 +28,10 @@ namespace Pazzo_CRUD.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Employee employee = db.Employee.Find(id);
+            var entities = from e in db.EmployeeDetail
+                           where e.Id == id
+                           select e;
+            EmployeeDetail employee = entities.FirstOrDefault();
             if (employee == null)
             {
                 return HttpNotFound();

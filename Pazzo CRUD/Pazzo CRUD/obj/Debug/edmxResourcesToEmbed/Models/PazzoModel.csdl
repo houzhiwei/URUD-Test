@@ -12,6 +12,7 @@
   <EntityContainer Name="PazzoDBEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Employee" EntityType="Self.Employee" />
     <EntitySet Name="Department" EntityType="PazzoDBModel.Department" />
+    <EntitySet Name="EmployeeDetail" EntityType="PazzoDBModel.EmployeeDetail" />
   </EntityContainer>
   <EntityType Name="Department">
     <Key>
@@ -20,5 +21,19 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
     <Property Name="createDate" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="EmployeeDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="createDate" />
+      <PropertyRef Name="deptName" />
+      <PropertyRef Name="deptId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="createDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="deptName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="deptId" Type="Int32" Nullable="false" />
   </EntityType>
 </Schema>

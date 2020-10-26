@@ -22,9 +22,34 @@
           <Property Name="depId" Type="int" Nullable="false" />
           <Property Name="createDate" Type="date" Nullable="false" />
         </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'D:\GIT\URUD-TEST\PAZZO CRUD\PAZZO CRUD\APP_DATA\PAZZODB.MDF.dbo.EmployeeDetail' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="EmployeeDetail">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="createDate" />
+            <PropertyRef Name="deptName" />
+            <PropertyRef Name="deptId" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="createDate" Type="date" Nullable="false" />
+          <Property Name="deptName" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="deptId" Type="int" Nullable="false" />
+        </EntityType>
         <EntityContainer Name="PazzoDBModelStoreContainer">
           <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmployeeDetail" EntityType="Self.EmployeeDetail" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [EmployeeDetail].[Id] AS [Id], 
+    [EmployeeDetail].[name] AS [name], 
+    [EmployeeDetail].[createDate] AS [createDate], 
+    [EmployeeDetail].[deptName] AS [deptName], 
+    [EmployeeDetail].[deptId] AS [deptId]
+    FROM [dbo].[EmployeeDetail] AS [EmployeeDetail]</DefiningQuery>
+          </EntitySet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -42,6 +67,7 @@
         <EntityContainer Name="PazzoDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Employee" EntityType="Self.Employee" />
           <EntitySet Name="Department" EntityType="PazzoDBModel.Department" />
+          <EntitySet Name="EmployeeDetail" EntityType="PazzoDBModel.EmployeeDetail" />
         </EntityContainer>
         <EntityType Name="Department">
           <Key>
@@ -50,6 +76,20 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="createDate" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="EmployeeDetail">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="createDate" />
+            <PropertyRef Name="deptName" />
+            <PropertyRef Name="deptId" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="createDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="deptName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="deptId" Type="Int32" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -70,6 +110,17 @@
           <EntitySetMapping Name="Department">
             <EntityTypeMapping TypeName="PazzoDBModel.Department">
               <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="createDate" ColumnName="createDate" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeDetail">
+            <EntityTypeMapping TypeName="PazzoDBModel.EmployeeDetail">
+              <MappingFragment StoreEntitySet="EmployeeDetail">
+                <ScalarProperty Name="deptId" ColumnName="deptId" />
+                <ScalarProperty Name="deptName" ColumnName="deptName" />
                 <ScalarProperty Name="createDate" ColumnName="createDate" />
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />

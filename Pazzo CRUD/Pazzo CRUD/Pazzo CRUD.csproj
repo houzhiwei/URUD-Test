@@ -141,6 +141,9 @@
     <Compile Include="Models\Employee.cs">
       <DependentUpon>PazzoModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmployeeDetail.cs">
+      <DependentUpon>PazzoModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\PazzoModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
