@@ -83,3 +83,7 @@ D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\obj\Debug\Pazzo CRUD.csprojAssemblyRefere
 D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\obj\Debug\Pazzo CRUD.csproj.CopyComplete
 D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\obj\Debug\Pazzo CRUD.dll
 D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\obj\Debug\Pazzo CRUD.pdb
+D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\bin\EntityFramework.dll
+D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\bin\EntityFramework.SqlServer.dll
+D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\bin\EntityFramework.xml
+D:\Git\URUD-Test\Pazzo CRUD\Pazzo CRUD\bin\EntityFramework.SqlServer.xml
