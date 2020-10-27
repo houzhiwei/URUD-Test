@@ -14,3 +14,33 @@ D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\obj\Debug\UnitTestPazzo.csprojAssembly
 D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\obj\Debug\UnitTestPazzo.csproj.CopyComplete
 D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\obj\Debug\UnitTestPazzo.dll
 D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\obj\Debug\UnitTestPazzo.pdb
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\UnitTestPazzo.dll.config
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\EntityFramework.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Pazzo CRUD.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.Helpers.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.Mvc.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.Razor.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.WebPages.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.Optimization.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Pazzo CRUD.pdb
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Pazzo CRUD.dll.config
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\EntityFramework.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.Helpers.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.Mvc.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.Razor.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.WebPages.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\System.Web.Optimization.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\zh-Hant\System.Web.Helpers.resources.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\zh-Hant\System.Web.Mvc.resources.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\zh-Hant\System.Web.Razor.resources.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\zh-Hant\System.Web.WebPages.resources.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\zh-Hant\System.Web.WebPages.Deployment.resources.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\zh-Hant\System.Web.WebPages.Razor.resources.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\zh-Hant\System.Web.Optimization.resources.dll
