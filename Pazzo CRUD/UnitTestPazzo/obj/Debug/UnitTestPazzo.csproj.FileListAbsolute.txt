@@ -1,0 +1,16 @@
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\UnitTestPazzo.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\UnitTestPazzo.pdb
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\obj\Debug\UnitTestPazzo.csprojAssemblyReference.cache
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\obj\Debug\UnitTestPazzo.csproj.CopyComplete
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\obj\Debug\UnitTestPazzo.dll
+D:\Git\URUD-Test\Pazzo CRUD\UnitTestPazzo\obj\Debug\UnitTestPazzo.pdb

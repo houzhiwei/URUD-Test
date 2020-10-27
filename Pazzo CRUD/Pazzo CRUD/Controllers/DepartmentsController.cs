@@ -12,12 +12,21 @@ namespace Pazzo_CRUD.Controllers
 {
     public class DepartmentsController : Controller
     {
-        private PazzoDBEntities db = new PazzoDBEntities();
+        //private PazzoDBEntities db = new PazzoDBEntities();
+        private UnitOfWork unitOfWork = null;                       //使用UnitOfWork 進行資料庫存取
+        public DepartmentsController(): this(new UnitOfWork())
+        {
 
+        }
+        public DepartmentsController(UnitOfWork uow)
+        {
+            this.unitOfWork = uow;
+        }
         // GET: Departments
         public ActionResult Index()
         {
-            return View(db.Department.ToList());
+            List<Department> depts = unitOfWork.DepartmentRepository.GetAllDepartments();
+            return View(depts);
         }
 
         // GET: Departments/Details/5
@@ -27,7 +36,7 @@ namespace Pazzo_CRUD.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Department department = db.Department.Find(id);
+            Department department = unitOfWork.DepartmentRepository.GetDepartmentById(id);
             if (department == null)
             {
                 return HttpNotFound();
@@ -50,8 +59,10 @@ namespace Pazzo_CRUD.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Department.Add(department);
-                db.SaveChanges();
+                unitOfWork.DepartmentRepository.AddDepartment(department);
+                unitOfWork.DepartmentRepository.Save();
+                //db.Department.Add(department);
+                //db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -65,7 +76,7 @@ namespace Pazzo_CRUD.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Department department = db.Department.Find(id);
+            Department department = unitOfWork.DepartmentRepository.GetDepartmentById(id);
             if (department == null)
             {
                 return HttpNotFound();
@@ -82,8 +93,9 @@ namespace Pazzo_CRUD.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(department).State = EntityState.Modified;
-                db.SaveChanges();
+                unitOfWork.DepartmentRepository.UpdateDepartment(department);
+                unitOfWork.DepartmentRepository.Save();
+               
                 return RedirectToAction("Index");
             }
             return View(department);
@@ -96,7 +108,7 @@ namespace Pazzo_CRUD.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Department department = db.Department.Find(id);
+            Department department = unitOfWork.DepartmentRepository.GetDepartmentById(id);
             if (department == null)
             {
                 return HttpNotFound();
@@ -109,9 +121,12 @@ namespace Pazzo_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Department department = db.Department.Find(id);
-            db.Department.Remove(department);
-            db.SaveChanges();
+            Department dept = unitOfWork.DepartmentRepository.GetDepartmentById(id);
+            unitOfWork.DepartmentRepository.DeleteDepartment(dept);
+
+            //Department department = db.Department.Find(id);
+            //db.Department.Remove(department);
+            //db.SaveChanges();
             return RedirectToAction("Index");
         }
 
@@ -119,7 +134,7 @@ namespace Pazzo_CRUD.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                unitOfWork.Dispose();
             }
             base.Dispose(disposing);
         }
